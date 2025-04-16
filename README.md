@@ -1,50 +1,58 @@
 # TP1 HOMEWORK
-## Exercise 01:
-### question 1:
+## Exercise 01 :
+### question 1 :
 the binary code of each instruction and its format group.
-1. type is :
+#### instruction li $t0, 10
+1. type is : immediate format.
 
    
 ![first](images/exo1_quest1/firstinst.png)  
 
-2. type is :
+#### instruction li $t1, 15
+2. type is : immediate format.
 
    
 ![second](images/exo1_quest1/secondinstru.png)
-   
-6. type is :
+
+#### instruction la $t2, vars  
+3. type is : immediate format.
 
    
 ![thirdd](images/exo1_quest1/thirdinst.png)  
 
-4. type is :
+4. type is : immediate format.
   
 ![fourth](images/exo1_quest1/fourthinst.png)  
 
-7. type is :  
+#### instruction sw $t1, 0($t0)
+5. type is : immediate format.
 
 
 ![fifth](images/exo1_quest1/fifthinst.png)  
 
-6. type is :  
+#### instruction lw $t2, 4($t0)
+6. type is : immediate format.
 
 
 ![sixth](images/exo1_quest1/sixthinst.png)  
 
-7. type is :
+#### instruction addi $t2, $t0,4
+7. type is : immediate format.
 
 ![eightth](images/exo1_quest1/seventhinst.png)  
 
-9. type is :  
+#### instruction subi $t2, $t0,4
+8. type is :  immediate format.
 
 
 ![nineth](images/exo1_quest1/eightthinst.png)  
 
-9. type is :
+9. type is : register format.
 
 ![tenth](images/exo1_quest1/ninethisnt.png)  
 
-11. type is :  
+#### instruction syscall
+10. type is : register format.
 
 ![tenth](images/exo1_quest1/tenthisnt.png)  
 
@@ -55,28 +63,38 @@ the state of the control unit signals and the ALU control.
    
    ![eightth](images/exo1_quest2/swcommand.png)
    
-3. ALU control signals
+3. ALU control signals :
+
+   ![eightth](images/exo1_quest2/sw.png)
+   
 #### instruction lw $t2, 4($t0)
 1. control unit signals :
    
    ![eightth](images/exo1_quest2/lwcommand.png)
    
-3. ALU control signals
+3. ALU control signals :
+   
+   ![eightth](images/exo1_quest2/lw.png)
+   
 #### instruction addi $t2, $t0,4
 1. control unit signals :
    
    ![eightth](images/exo1_quest2/addcommand.png)
    
-3. ALU control signals
+3. ALU control signals :
+   
+   ![eightth](images/exo1_quest2/add.png)
+   
 
-## Exercise 02:
+## Exercise 02 :
+### question 1 :
 the value of the PC register for each instruction.
-1. first :
+1. first : 
 
 ![first](images/exo2_quest1/1_.png)  
 ![first](images/exo2_quest1/1_one.png)  
 
-2.second :  
+2.second :
 
 ![first](images/exo2_quest1/2_.png)  
 ![first](images/exo2_quest1/2_two.png)  
@@ -111,4 +129,7 @@ the value of the PC register for each instruction.
 
 
 ![first](images/exo2_quest1/8_.png)  
-![first](images/exo2_quest1/8_eight.png) 
+![first](images/exo2_quest1/8_eight.png)  
+
+## Exercise 03 :
+### question 1 :
