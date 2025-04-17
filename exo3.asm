@@ -1,21 +1,17 @@
-main:
-    bne R20, R0, DoElse
-    add R4, R16, R0     ; move g → R4
-    add R5, R17, R0     ; move h → R5
-    jal update
-    addi R21, R2    ; move result → b
-    j SkipElse
-
-DoElse:
-    add R4, R18, R0     ; move k → R4
-    add R5, R19, R0     ; move m → R5
-    jal update
-    addi R22, R2    ; move result → c
-
-SkipElse:
-
+.text
+li $s0, 3
+li $s1, 4
+li $a0, 3
+li $a1, 5
+jal update
+add $s4,$t0,$v0
+add $s3,$s1,$v1
+j suit
 update:
-    add R20, R4, R5
-    sll R21, R5, 4
-    sub R2, R20, R21
-    jr $ra
+add $s1,$a1,$a0
+add $s0,$a1,$a0
+addi $v1,$s1,0
+addi $v0,$s0,0
+jr $ra
+suit:
+syscall
