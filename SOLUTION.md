@@ -262,6 +262,7 @@ the value of the PC register for the branch instructions.
  ### question 3 :  
  two solutions for this problem :  
  > the use of temperory registers inside the update function instead of s0 and s1.
+
  ```asm
  update:
      add $t0, $a1, $a0    # $t0 = a1 + a0
@@ -272,6 +273,7 @@ the value of the PC register for the branch instructions.
  ```
  
  > save the value of s0 and s1 registers in a stack.
+
  ```asm
     update:
      addi $sp, $sp, -8      # Make space on stack
