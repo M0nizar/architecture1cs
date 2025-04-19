@@ -38,6 +38,9 @@ end
 >     - high number of clock cycles (436): every stage takes one cycle.
 >     - number of instructions matches the expected number 86.
 
+![No Pipeline](images/without%20pipelien.png)
+
+
 6. Dans la fenêtre du pipeline ("SHOW PIPELINE") ouverte auparavant, décocher le checkbox "No instruction pipeline", cliquer sur FLUSH et fermer la fenêtre du pipeline.
 
 7. Sélectionner la première instruction du code et relancer l’exécution du programme avec "RUN" en veillant à ce que la vitesse d’exécution soit à son maximum (avec "FAST").
@@ -50,6 +53,9 @@ end
 >    - speed factor (2.56)>1 that means there is an acceleration.
 >    - fewer number of clock cycles (168): overlapping stages reduces the number of cycles.
 >    - busy stages : the appear of it means that the pipeline logic is working.
+
+![with Pipeline](images/with%20pipeline.png)
+
 9. Fermer la fenêtre du pipeline ouverte auparavant. Dans "PROGRAM LIST", sélectionner le programme créé auparavant ("PIPEONE") et supprimer-le avec "REMOVE PROGRAM".
 
 10. Créer et sauvegarder dans "CPU INSTRUCTIONS IN MEMORY" le programme qui suit. Avant de l’exécuter, examiner-le et essayer de déduire la valeur de R03 (sachant que R03 est le registre destination).
@@ -69,9 +75,11 @@ HLT
 
 > - the value of R03 is not as expected, the execution show 0.
 > - explication :
->    - inserts bubbles to avoid problems like data loss or data hazards, it gives some time for instructions to finish before the next one starts execution.
+>    - inserting bubbles helps in avoiding problems like data loss or data hazards, it gives some time for instructions to finish before the next one starts execution.
 >    - When checking "No Insert Bubbles", the cpu does not do the delay of the stages thats why the next instruction may execute before the previous one give a result.
 >    - thats why the multiplication did multiply 3 with 0 because the instuction of "MOV #10, R03" didnt finish execution and write its result in the register.
+
+![without bubbles](images/bubles.png)
 
 13. Cliquer sur "SHOW PIPELINE" pour ouvrir la fenêtre du pipeline. Décocher le checkbox "Do no insert bubbles", cliquer sur "FLUSH" et fermer la fenêtre du pipeline.
 
@@ -79,7 +87,9 @@ HLT
 
 > - the value of R03 is as we expected to be, the execution show 30.
 > - explication :
->    - According to the pipeline stages diagram in the software, we observe that when automatic bubble insertion is enabled, the CPU allows the instruction "MOV #10, R03" to enter a new stage for reading the operand ? 
->     simultaneously while the previous instruction is still writing its result.
+>    - According to the pipeline stages diagram in the software, we observe that when bubble insertion is enabled, the CPU allows the instruction "MOV #10, R03" to enter a new stage for reading the operand 
+> simultaneously while the previous instruction is still writing its result.
 >    - However, when we check the option "Do not insert bubbles", the CPU does not wait, and the next instruction begins executing before the previous instruction has written its result. This causes the next 
 >      instruction to use an incorrect value.
+
+![with bubbles](images/with%20bubbles.png)
