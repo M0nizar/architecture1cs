@@ -7,17 +7,17 @@
 
 ## QUESTION 01 :
 * Diagramme de cas d’utilisation représentant les fonctionnalités du système :  
-![FIRST]()
+![FIRST](./usecsse.jpg)
 ---
 
 ## QUESTION 02 :
 * Diagramme de sequence pour le scenario donne :
-![SECOND]()
+![SECOND](./sequnce.jpg)
 ---
 
 ## QUESTION 03 :
 * Diagramme de classe d'analyse :
-![THIRD]()
+![THIRD](./class.jpg)
 ---
 
 ## QUESTION 04 :
@@ -28,5 +28,5 @@
 
 ## QUESTION 05 :
 * Diagramme d'activite pour enchainement donne : 
-![FOURTH]()
+![FOURTH](./activity.jpg)
 ---
