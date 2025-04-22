@@ -6,18 +6,21 @@
 ----
 
 ## QUESTION 01 :
-* Diagramme de cas d’utilisation représentant les fonctionnalités du système :  
-![FIRST](./usecsse.jpg)
+* Diagramme de cas d’utilisation représentant les fonctionnalités du système :
+  
+![FIRST](./usecsse.png)
 ---
 
 ## QUESTION 02 :
 * Diagramme de sequence pour le scenario donne :
-![SECOND](./sequnce.jpg)
+
+![SECOND](./sequnce.png)
 ---
 
 ## QUESTION 03 :
 * Diagramme de classe d'analyse :
-![THIRD](./class.jpg)
+
+![THIRD](./class.png)
 ---
 
 ## QUESTION 04 :
@@ -26,7 +29,8 @@
   * absence de la possibilite pour que le responsable de formation de solliciter l'avis du professeur principale.
 ---
 
-## QUESTION 05 :
-* Diagramme d'activite pour enchainement donne : 
-![FOURTH](./activity.jpg)
+## QUESTION 05 :  
+* Diagramme d'activite pour enchainement donne :
+ 
+![FOURTH](./activity.png)
 ---
