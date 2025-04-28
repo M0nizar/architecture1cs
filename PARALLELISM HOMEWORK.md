@@ -6,6 +6,9 @@
 
 
 ----
+## MY CPU CARA
+
+![tenth](images/parallelism/my cpu.png)
 ## EXEMPLE 01
 ```C
 #include <omp.h>
@@ -24,6 +27,7 @@ int main () {
 > - exxplanation:
 >   - according to the code it creates possible threads that the pc has and then for every thread it gives an id then display it next to hello and world, because i have 4 cores with 2 threads for each the execution shows 8 lines of hello worls.
 
+![first](images/parallelism/exemple1.png)
 ## EXEMPLE 02
 ```C
 #include <omp.h>
@@ -39,6 +43,8 @@ void main () {
 ```
 > - commenting the result:
 >    - the execution shows 10 hello worlds with the id of the thread created (we cerated 10 threads), the order o lines is not sequential because they are running in parellel and system shuldule does not guarante the order.
+
+![second](images/parallelism/exemple_2.png)
 ## EXEMPLE 03
 ```C
 #include <stdlib.h>
@@ -72,6 +78,8 @@ int a = 10, b = 20, c = 30 ;
 >   - private directive : each thread(we have two) gets a copy but it doesnt use the value of the master thread which is 10, so the result of a will be unexpected and have a strange value for my exemple : 21918, 32675.
 >   - firstprivate : each thread get a copy and be inisialised with the value in master thread which is 20 , so the result will be 20 + 1 for both threads.
 >   - shared : both threads use the same variable so the result will be 30 for both.
+
+![third](images/parallelism/exemple_3.png)
 ## EXEMPLE 4.1
 ```C
 #include <stdlib.h>
@@ -116,6 +124,8 @@ int main() {
  }
 ```
 - this is the execution time for the sequential multiplication of the matrixes :
+
+![fourth](images/parallelism/exemple41.png)
 ## EXEMPLE 4.2
 ```c
 #include <stdlib.h>
@@ -170,3 +180,4 @@ int main() {
 }
 ```
 - this is the execution time for the parallel multiplication of the matrixes :
+![fifth](images/parallelism/exemple42.png)
