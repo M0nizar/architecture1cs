@@ -6,9 +6,9 @@
 
 
 ----
-## MY CPU CARA
+## MY CPU CHARACTERISTICS
 
-![tenth](images/parallelism/my cpu.png)
+![tenth](images/parallelism/my_cpu.png)
 ## EXEMPLE 01
 ```C
 #include <omp.h>
